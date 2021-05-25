@@ -4,7 +4,7 @@ public class GadgetsRunning {
 
 	public static void main(String[] args) {
 		
-		// Применение классов Radio
+		// РџСЂРёРјРµРЅРµРЅРёРµ РєР»Р°СЃСЃРѕРІ Radio
 		boolean radioOn = true;
 		int radioVolume = 75;
 		double radioFrequency = 83.2;
@@ -18,10 +18,10 @@ public class GadgetsRunning {
 		radio_1.setRadioFrequency (newRadioFrequency);
 		int newRadioVolume = 25;
 		radio_1.setDeviseVolume(newRadioVolume);
-		System.out.println("Установлена громкость радиоприемника " + radio_1.getDeviseVolume() + " %");
+		System.out.println("РЈСЃС‚Р°РЅРѕРІР»РµРЅР° РіСЂРѕРјРєРѕСЃС‚СЊ СЂР°РґРёРѕРїСЂРёРµРјРЅРёРєР° " + radio_1.getDeviseVolume() + " %");
 		
 		
-		// Применение класса TV 
+		// РџСЂРёРјРµРЅРµРЅРёРµ РєР»Р°СЃСЃР° TV 
 		boolean tvOn = true;
 		int tvVolume = 35;
 		int tvChannel = 5;
@@ -36,7 +36,7 @@ public class GadgetsRunning {
 		int newTvScreenBrightness = 60;
 		tv_1.setTvScreenBrightness(newTvScreenBrightness);
 
-		// Применение класса MobilePhone
+		// РџСЂРёРјРµРЅРµРЅРёРµ РєР»Р°СЃСЃР° MobilePhone
 		boolean mobilePhoneOn = true;
 		int mobilePhoneVolume = 75;
 		String phoneNumber = "8-903-777-77-77";
@@ -52,40 +52,40 @@ public class GadgetsRunning {
 }
 
 /*
- * Результат работы программы:
+ * Р РµР·СѓР»СЊС‚Р°С‚ СЂР°Р±РѕС‚С‹ РїСЂРѕРіСЂР°РјРјС‹:
  * 
-Новый радиоприемник создан
-Радио включено - true 
-Громкость - 75 
-Частота - 83,200000 
+РќРѕРІС‹Р№ СЂР°РґРёРѕРїСЂРёРµРјРЅРёРє СЃРѕР·РґР°РЅ
+Р Р°РґРёРѕ РІРєР»СЋС‡РµРЅРѕ - true 
+Р“СЂРѕРјРєРѕСЃС‚СЊ - 75 
+Р§Р°СЃС‚РѕС‚Р° - 83,200000 
 
-Установлена частота радиоприемника 90.2 мГц
-Установлена громкость радиоприемника 25 %
+РЈСЃС‚Р°РЅРѕРІР»РµРЅР° С‡Р°СЃС‚РѕС‚Р° СЂР°РґРёРѕРїСЂРёРµРјРЅРёРєР° 90.2 РјР“С†
+РЈСЃС‚Р°РЅРѕРІР»РµРЅР° РіСЂРѕРјРєРѕСЃС‚СЊ СЂР°РґРёРѕРїСЂРёРµРјРЅРёРєР° 25 %
 
-Новый TV создан
-TV включен - true 
-Громкость - 35 
-Канал - 5 
-Яркость экрана - 55 
+РќРѕРІС‹Р№ TV СЃРѕР·РґР°РЅ
+TV РІРєР»СЋС‡РµРЅ - true 
+Р“СЂРѕРјРєРѕСЃС‚СЊ - 35 
+РљР°РЅР°Р» - 5 
+РЇСЂРєРѕСЃС‚СЊ СЌРєСЂР°РЅР° - 55 
 
-Установлен TV канал № 6
-Установлена яркость TV экрана 60%
+РЈСЃС‚Р°РЅРѕРІР»РµРЅ TV РєР°РЅР°Р» в„– 6
+РЈСЃС‚Р°РЅРѕРІР»РµРЅР° СЏСЂРєРѕСЃС‚СЊ TV СЌРєСЂР°РЅР° 60%
 
-Новый мобильный телефон создан
-Мобильный телефон включен - true 
-Громкость - 75 
-Звоню по номеру 8-903-777-77-77
-Трубка положена
+РќРѕРІС‹Р№ РјРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ СЃРѕР·РґР°РЅ
+РњРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ РІРєР»СЋС‡РµРЅ - true 
+Р“СЂРѕРјРєРѕСЃС‚СЊ - 75 
+Р—РІРѕРЅСЋ РїРѕ РЅРѕРјРµСЂСѓ 8-903-777-77-77
+РўСЂСѓР±РєР° РїРѕР»РѕР¶РµРЅР°
 */
 
-// Абстрактный класс Gadget
+// РђР±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ Gadget
 abstract class Gadget{
 	
-	   // Поля абстрактного класса
-	   private boolean deviseOn = false; // прибор выключен по умолчанию
-	   private int deviseVolume = 50; // громкость по умолчанию 50%
+	   // РџРѕР»СЏ Р°Р±СЃС‚СЂР°РєС‚РЅРѕРіРѕ РєР»Р°СЃСЃР°
+	   private boolean deviseOn = false; // РїСЂРёР±РѕСЂ РІС‹РєР»СЋС‡РµРЅ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
+	   private int deviseVolume = 50; // РіСЂРѕРјРєРѕСЃС‚СЊ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ 50%
 
-	   // Конструктор абстрактного класса
+	   // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р°Р±СЃС‚СЂР°РєС‚РЅРѕРіРѕ РєР»Р°СЃСЃР°
 	   public Gadget( boolean deviseOn, int deviseVolume )
 	   {
 	      this.deviseOn = deviseOn;
@@ -97,9 +97,9 @@ abstract class Gadget{
 	      this.deviseVolume = deviseVolume;
 	   }
 	   
-	   // Методы абстрактного класса
+	   // РњРµС‚РѕРґС‹ Р°Р±СЃС‚СЂР°РєС‚РЅРѕРіРѕ РєР»Р°СЃСЃР°
 	   public void setDeviseOn(boolean deviseOn) {
-		// реализация включения/выключения прибора
+		// СЂРµР°Р»РёР·Р°С†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ/РІС‹РєР»СЋС‡РµРЅРёСЏ РїСЂРёР±РѕСЂР°
 		   this.deviseOn = deviseOn;
 		   
 	   }
@@ -107,7 +107,7 @@ abstract class Gadget{
 		   return deviseOn;
 	   }
 	   public void setDeviseVolume (int deviseVolume) {
-		// реализация регулировки громкости
+		// СЂРµР°Р»РёР·Р°С†РёСЏ СЂРµРіСѓР»РёСЂРѕРІРєРё РіСЂРѕРјРєРѕСЃС‚Рё
 		   this.deviseVolume = deviseVolume;
 	   }
 	   public int getDeviseVolume() {
@@ -117,24 +117,24 @@ abstract class Gadget{
 
 
 class Radio extends Gadget{
-	// Поля класса Radio
+	// РџРѕР»СЏ РєР»Р°СЃСЃР° Radio
 	private double radioFrequency;
 	
 	public Radio(boolean deviseOn, int deviseVolume, double radioFrequency) {
 		super(deviseOn, deviseVolume);
-		// Реализация включения радио и начальная установка частоты
+		// Р РµР°Р»РёР·Р°С†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ СЂР°РґРёРѕ Рё РЅР°С‡Р°Р»СЊРЅР°СЏ СѓСЃС‚Р°РЅРѕРІРєР° С‡Р°СЃС‚РѕС‚С‹
 		this.radioFrequency = radioFrequency;
-		System.out.println("Новый радиоприемник создан");
-		System.out.printf("Радио включено - %b \n", deviseOn);
-		System.out.printf("Громкость - %d \n", deviseVolume);
-		System.out.printf("Частота - %f \n", radioFrequency);
+		System.out.println("РќРѕРІС‹Р№ СЂР°РґРёРѕРїСЂРёРµРјРЅРёРє СЃРѕР·РґР°РЅ");
+		System.out.printf("Р Р°РґРёРѕ РІРєР»СЋС‡РµРЅРѕ - %b \n", deviseOn);
+		System.out.printf("Р“СЂРѕРјРєРѕСЃС‚СЊ - %d \n", deviseVolume);
+		System.out.printf("Р§Р°СЃС‚РѕС‚Р° - %f \n", radioFrequency);
 		
 	}
 	
 	   public void setRadioFrequency(double radioFrequency) {
-		// реализация установки частоты
+		// СЂРµР°Р»РёР·Р°С†РёСЏ СѓСЃС‚Р°РЅРѕРІРєРё С‡Р°СЃС‚РѕС‚С‹
 		   this.radioFrequency = radioFrequency;
-		   System.out.println("Установлена частота радиоприемника " + this.radioFrequency + " мГц");
+		   System.out.println("РЈСЃС‚Р°РЅРѕРІР»РµРЅР° С‡Р°СЃС‚РѕС‚Р° СЂР°РґРёРѕРїСЂРёРµРјРЅРёРєР° " + this.radioFrequency + " РјР“С†");
 		   
 	   }
 	   public double getRadioFrequency() {
@@ -143,27 +143,27 @@ class Radio extends Gadget{
 }
 
 class TV extends Gadget{
-	// Поля класса TV
+	// РџРѕР»СЏ РєР»Р°СЃСЃР° TV
 	private int tvChannel;
 	private int tvScreenBrightness;
 	
 	public TV(boolean deviseOn, int deviseVolume, int tvChannel, int tvScreenBrightness) {
 		super(deviseOn, deviseVolume);
-		// Реализация включения TV и начальная установка громкости, канала и яркости
+		// Р РµР°Р»РёР·Р°С†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ TV Рё РЅР°С‡Р°Р»СЊРЅР°СЏ СѓСЃС‚Р°РЅРѕРІРєР° РіСЂРѕРјРєРѕСЃС‚Рё, РєР°РЅР°Р»Р° Рё СЏСЂРєРѕСЃС‚Рё
 		this.tvChannel = tvChannel;
 		this.tvChannel = tvScreenBrightness;
-		System.out.println("\nНовый TV создан");
-		System.out.printf("TV включен - %b \n", deviseOn);
-		System.out.printf("Громкость - %d \n", deviseVolume);
-		System.out.printf("Канал - %d \n", tvChannel);
-		System.out.printf("Яркость экрана - %d \n", tvScreenBrightness);
+		System.out.println("\nРќРѕРІС‹Р№ TV СЃРѕР·РґР°РЅ");
+		System.out.printf("TV РІРєР»СЋС‡РµРЅ - %b \n", deviseOn);
+		System.out.printf("Р“СЂРѕРјРєРѕСЃС‚СЊ - %d \n", deviseVolume);
+		System.out.printf("РљР°РЅР°Р» - %d \n", tvChannel);
+		System.out.printf("РЇСЂРєРѕСЃС‚СЊ СЌРєСЂР°РЅР° - %d \n", tvScreenBrightness);
 		
 	}
 	
 	   public void setTvChannel(int tvChannel) {
-		// реализация установки канала
+		// СЂРµР°Р»РёР·Р°С†РёСЏ СѓСЃС‚Р°РЅРѕРІРєРё РєР°РЅР°Р»Р°
 		   this.tvChannel = tvChannel;
-		   System.out.println("Установлен TV канал № " + this.tvChannel);
+		   System.out.println("РЈСЃС‚Р°РЅРѕРІР»РµРЅ TV РєР°РЅР°Р» в„– " + this.tvChannel);
 		   
 	   }
 	   public double getTvChannel() {
@@ -171,9 +171,9 @@ class TV extends Gadget{
 	   }	
 	   
 	   public void setTvScreenBrightness(int tvScreenBrightness) {
-		// реализация установки яркости
+		// СЂРµР°Р»РёР·Р°С†РёСЏ СѓСЃС‚Р°РЅРѕРІРєРё СЏСЂРєРѕСЃС‚Рё
 		   this.tvScreenBrightness = tvScreenBrightness;
-		   System.out.println("Установлена яркость TV экрана " + this.tvScreenBrightness + "%");
+		   System.out.println("РЈСЃС‚Р°РЅРѕРІР»РµРЅР° СЏСЂРєРѕСЃС‚СЊ TV СЌРєСЂР°РЅР° " + this.tvScreenBrightness + "%");
 	   }
 	   
 	   public double getTvScreenBrightness() {
@@ -187,32 +187,32 @@ class MobilePhone extends Gadget{
 	
 	public MobilePhone(boolean deviseOn, int deviseVolume) {
 		super(deviseOn, deviseVolume);
-		// Реализация включения мобильного и начальная установка громкости
-		System.out.println("\nНовый мобильный телефон создан");
-		System.out.printf("Мобильный телефон включен - %b \n", deviseOn);
-		System.out.printf("Громкость - %d \n", deviseVolume);
+		// Р РµР°Р»РёР·Р°С†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ РјРѕР±РёР»СЊРЅРѕРіРѕ Рё РЅР°С‡Р°Р»СЊРЅР°СЏ СѓСЃС‚Р°РЅРѕРІРєР° РіСЂРѕРјРєРѕСЃС‚Рё
+		System.out.println("\nРќРѕРІС‹Р№ РјРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ СЃРѕР·РґР°РЅ");
+		System.out.printf("РњРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ РІРєР»СЋС‡РµРЅ - %b \n", deviseOn);
+		System.out.printf("Р“СЂРѕРјРєРѕСЃС‚СЊ - %d \n", deviseVolume);
 	}
 	
 	public void makeCall(String phoneNumber) {
-		// реализация звонка
+		// СЂРµР°Р»РёР·Р°С†РёСЏ Р·РІРѕРЅРєР°
 		   handsetStatus = true;
 		   if(handsetStatus) {
-			   System.out.println("Звоню по номеру " + phoneNumber);
+			   System.out.println("Р—РІРѕРЅСЋ РїРѕ РЅРѕРјРµСЂСѓ " + phoneNumber);
 		   }
 	}
 	
 	public void answerCall() {
-		// реализация ответа на звонок
+		// СЂРµР°Р»РёР·Р°С†РёСЏ РѕС‚РІРµС‚Р° РЅР° Р·РІРѕРЅРѕРє
 		   handsetStatus = true;
 		   if(handsetStatus) {
-			   System.out.println("Отвечаю на звонок");
+			   System.out.println("РћС‚РІРµС‡Р°СЋ РЅР° Р·РІРѕРЅРѕРє");
 		   }
 	}
 	
 	public void dropHandset() {
-		// реализация действия положить трубку
+		// СЂРµР°Р»РёР·Р°С†РёСЏ РґРµР№СЃС‚РІРёСЏ РїРѕР»РѕР¶РёС‚СЊ С‚СЂСѓР±РєСѓ
 		   handsetStatus = false;
-		   System.out.println("Трубка положена");
+		   System.out.println("РўСЂСѓР±РєР° РїРѕР»РѕР¶РµРЅР°");
 	}
 	
 	   public boolean getHandsetStatus() {
